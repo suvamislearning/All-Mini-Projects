@@ -64,34 +64,7 @@ Every project links back to the dashboard with a "← Back to dashboard" link.
 5. **Open `index.html` in your browser** to check the new tile appears and the
    link opens your new project.
 
-## Editing an existing project
 
-Go into `projects/<project-name>/` and edit its `index.html` or `style.css`
-directly. Changes there never affect the dashboard or any other project,
-because each folder has its own separate stylesheet.
-
-## Renaming or removing a project
-
-- **Rename:** rename the folder inside `projects/`, then update the `href`
-  of its tile on the dashboard to match the new folder name.
-- **Remove:** delete the folder inside `projects/`, then delete its `<a class="tile">`
-  block from the dashboard's `index.html`.
-
-## Viewing it locally
-
-Just double-click `index.html` at the root of the folder to open the dashboard
-in your browser — no server or build step needed, since everything is plain
-HTML/CSS (and one small JS file for the to-do list). Clicking a tile opens
-that project's own `index.html` in the same tab.
-
-If you later want a live local server (useful for some browsers' security
-rules around JS), you can run, from inside the `my-mini-projects` folder:
-```
-python3 -m http.server 8000
-```
-then visit `http://localhost:8000` in your browser.
-
-## Suggested naming convention going forward
 
 - Folder name: lowercase, hyphen-separated, matches the project (`landing-page`, `quiz-app`).
 - Inside every project folder: always `index.html` + `style.css` (+ `script.js` if needed).
