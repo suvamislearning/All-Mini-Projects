@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body {
+   font-family: "Inter", sans-serif;
+   font-optical-sizing: auto;
+}
+
+
+main {
+    padding-top:40px;
+    display:flex;
+    gap:16px;
+    max-width:1174px;
+    margin:0 auto;
+}
+.images-section{
+    display:flex;
+    gap:16px;   
+}
+
+aside{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+
+}
+
+.content{
+    display:flex;
+    flex-direction:column;
+}
+
+.content-header{
+ display:flex;
+ flex-direction:column;
+ gap:4px;
+}
+.green-text{
+    color:#29AA04;
+    font-size:24px;
+}
+
+h1{
+    font-size:36px;
+}
+h2{
+    font-size:20px;
+    color:rgba(0,0,0,0.5);
+    font-weight:600;
+}
+.price-section{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    margin-top:8px;
+    margin-bottom:8px;
+    h2{
+        font-size:24px;
+        font-weight:600;
+        color:black;
+    }
+    p{
+        font-size:16px;
+         font-weight:600;
+         color:rgba(0,0,0,0.5);
+    }
+}
+.sizes{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:8px;
+    margin-bottom:40px;
+}
+.size{
+    border:1px solid rgba(0,0,0,0.5);
+    padding:12px 16px;
+    text-align:center;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.buttons{
+    display:flex;
+    flex-direction: column;
+    gap:4px;
+}
+
+button{
+    padding:20px;
+    border:1px solid black;
+    margin-bottom:5px;
+    border-radius:50px;
+    font-size:20px;
+    font-width:600;
+    cursor:pointer;
+    &:hover{
+        opacity:0.5;
+    }
+    &:first-child{
+        background-color: black;
+        color:white;
+
+    }
+
+}

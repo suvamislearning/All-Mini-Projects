@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --red: #d2191f;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #fffaf5;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+.image-container {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+}
+
+.content img {
+    position: absolute;
+    display: block;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 16px rgba(0, 0, 0, 0.15));
+}
+
+.burger {
+    width: 287px;
+    right: 68%;
+    top: 15%;
+}
+.pizza {
+    width: 300px;
+    left: 71%;
+    top: 40%;
+}
+.tomato-1 {
+    width: 74px;
+    left: 5%;
+    bottom: 30%;
+}
+
+.tomato-2 {
+    width: 70px;
+    right: 22%;
+    bottom: 55%;
+}
+
+.leap {
+    width: 98px;
+    left: 36%;
+    bottom: 76%;
+    transform: translateX(-50%);
+}
+
+.momo {
+    width: 214px;
+    right: 18%;
+    bottom: 66%;
+}
+.middle-text {
+    position: absolute;
+    top: 46%;
+    left: 42%;
+    justify-content: space-between;
+    align-items: center;
+}
+h1,p{
+    color:red;
+}
+h1{
+    margin-bottom:20px;
+}
+
+.info-rest {
+    position: absolute;
+    height: 66px;
+    width: 394px;
+    left: 37%;
+    top: 80%;
+    border: 2px solid green;
+    display: flex;
+    border-radius: 20px;
+    background-color: aliceblue;
+}
+.home-logo {
+    width: 38px;
+    height: 48px;
+    position: relative;
+    left: 6%;
+    top: 11%;
+}
+.rest-text {
+    position: relative;
+    left: 8%;
+    top: 24%;
+    font-size: 12px;
+    color: red;
+}
+
+.location {
+    width: 38px;
+    height: 48px;
+    position: relative;
+    left: 11%;
+    top: 11%;
+}
+
+.location-text {
+    position: relative;
+    left: 14%;
+    top: 28%;
+    font-size: 13px;
+    color: red;
+}
+
+.order {
+    width: 38px;
+    height: 48px;
+    position: relative;
+    left: 20%;
+    top: 11%;
+}
+
+.order-text {
+    position: relative;
+    left: 21%;
+    top: 28%;
+    font-size: 13px;
+    color: red;
+}

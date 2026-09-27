@@ -1,37 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Credit Card · My Mini Projects</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Ui design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="container">
+        <header>
+            <span class="logo">
+                <img src="logo.png" alt="Mastercard logo">
+                <h5>Mastercard</h5>
+            </span>
+            <img src="chip.png" alt="Card chip" class="chip">
+        </header>
 
-  <a class="back-link" href="../../index.html">← Back to dashboard</a>
-
-  <main class="wrap">
-    <div class="card">
-      <div class="row-top">
-        <span class="bank">NORTHBRIDGE</span>
-        <span class="chip"></span>
-      </div>
-
-      <div class="number">4321&nbsp;&nbsp;8892&nbsp;&nbsp;1147&nbsp;&nbsp;5309</div>
-
-      <div class="row-bottom">
-        <div>
-          <span class="label">Card holder</span>
-          <span class="value">J. Ramirez</span>
+        <div class="card-details">
+            <div class="name-number">
+                <h6>Card Number</h6>
+                <h5 class="number">1234 5678 9012 3456</h5>
+                <h5 class="name">John Doe</h5>
+            </div>
+            <div class="valid-date">
+                <h6>Expiry Date</h6>
+                <h5>05/28</h5>
+            </div>
         </div>
-        <div>
-          <span class="label">Expires</span>
-          <span class="value">09/29</span>
-        </div>
-        <span class="network">VISA</span>
-      </div>
     </div>
-  </main>
-
 </body>
 </html>
