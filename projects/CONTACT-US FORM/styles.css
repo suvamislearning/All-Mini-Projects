@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body {
+   font-family: "Inter", sans-serif;
+   font-optical-sizing: auto;
+   background-color: white;
+}
+
+main{
+    display:flex;
+    max-width:992px;
+    margin:0 auto;
+    padding:48px;
+    gap:120px;
+}
+
+.contact-form{
+    width:100%;
+    max-width:480px;
+}
+.form-header{
+    padding:16px;
+    h1{
+    font-size:32px;
+    font-weight:bold;
+    color:#121417;
+    margin-bottom: 12px;
+}
+p{
+    font-size:14px;
+    color:#121417;
+    max-width:447px;
+    margin-bottom: 16px;
+}
+}
+
+.form-field{
+    padding:12px 16px;
+}
+label{
+    display:block;
+    font-size:16px;
+    font-weight: 500;
+    color:#121417;
+    margin-bottom: 8px;
+}
+input, textarea{
+    padding: 15px;
+    width:100%;
+    font-size:16px;
+    line-height:1.5em;
+    color:#61758a;
+    border:1px solid #DBE0E5;
+    outline:none;
+    border-radius:8px;
+    &::placeholder{
+        color:#DBE0E5;
+    }
+    &:focus{
+        border-color:blue;
+    }
+}
+textarea{
+    min-height:120px;
+    resize:vertical;
+}
+.contact-info{
+    max-width:390px;
+    width:100%;
+}
+.form-submit{
+    padding:12px 16px;
+    button{
+        padding:10px 16px;
+        background-color:#1273d4;
+        color:white;
+        font-size:14px;
+        font-weight: 700;
+        line-height: 1.5em;
+        border:none;
+        border-radius:8px;
+        cursor:pointer;
+    }
+    &:hover{
+        opacity:0.8;
+    }
+}
+.map-container{
+    width:392px;
+    height:246px;
+    border-radius:10px;
+    overflow:hidden;
+}
+img{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+}
+.info-content{
+    h1{
+ font-size:22px;
+ margin-bottom:12px;
+    }
+ }   
+.info-item{
+   padding:4px 16px 12px;
+   
+    }
