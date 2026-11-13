@@ -42,6 +42,20 @@ const projects = [
     description: "A tribute page honoring Indian freedom fighter Subhas Chandra Bose.",
     path: "projects/tribute-card/index.html",
     tags: ["HTML", "CSS", "Tribute"]
+  },
+  {
+    id: 7,
+    title: "Service Page",
+    description: "A Creative Service Page for developers.",
+    path: "projects/SERVICE PAGE/index.html",
+    tags: ["HTML", "CSS", "Service"]
+  },
+  {
+    id: 8,
+    title: "Virtual Guitar",
+    description: "Play guitar chords, strum, and explore individual notes with your keyboard or on-screen controls.",
+    path: "projects/VIRTUAL GUITAR/index.html",
+    tags: ["HTML", "CSS", "JavaScript", "Audio"]
   }
 ];
 

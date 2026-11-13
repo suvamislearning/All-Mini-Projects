@@ -3,89 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Suvam's growing collection of frontend projects, UI builds, and creative code.">
   <title>Suvam | Frontend Projects Dashboard</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Animated Background -->
-  <div class="bg-orbs">
+  <div class="bg-orbs" aria-hidden="true">
     <div class="orb orb-1"></div>
     <div class="orb orb-2"></div>
     <div class="orb orb-3"></div>
   </div>
 
-  <!-- Navbar -->
   <header class="navbar">
     <div class="nav-left">
-      <a href="index.html" class="logo">
+      <a href="index.html" class="logo" aria-label="Suvam home">
         <span class="logo-text">Suvam</span>
         <span class="logo-dot"></span>
       </a>
-      <nav class="nav-links">
-        <a href="index.html" class="nav-link active">Home</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html" class="nav-link active" aria-current="page">Home</a>
         <a href="#projects" class="nav-link">Projects</a>
       </nav>
     </div>
-    <div class="nav-right">
-      <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
+    <div class="nav-right" aria-label="Social links">
+      <a href="https://www.instagram.com/suvamislearning/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+        <i class="fab fa-instagram" aria-hidden="true"></i>
       </a>
-      <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon" aria-label="Twitter">
-        <i class="fab fa-x-twitter"></i>
+      <a href="https://x.com/suvamislearning" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Twitter">
+        <i class="fab fa-x-twitter" aria-hidden="true"></i>
       </a>
-      <a href="https://github.com" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
-        <i class="fab fa-github"></i>
+      <a href="https://github.com/suvamislearning" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+        <i class="fab fa-github" aria-hidden="true"></i>
       </a>
     </div>
   </header>
 
-  <!-- Hero Section -->
   <main>
-    <section class="hero">
+    <section class="hero" aria-labelledby="hero-title">
       <div class="hero-content">
         <p class="hero-greeting">Welcome to my creative space</p>
-        <h1 class="typewriter-container">
-          <span id="typewriter"></span>
-          <span class="cursor">|</span>
+        <h1 class="typewriter-container" id="hero-title">
+          <span id="typewriter">My FrontEnd Projects</span>
+          <span class="cursor" aria-hidden="true">|</span>
         </h1>
-        <p class="hero-sub">A growing collection of frontend experiments, UI builds & creative code.</p>
+        <p class="hero-sub">A growing collection of frontend experiments, UI builds &amp; creative code.</p>
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
+    <section id="projects" class="projects-section" aria-labelledby="projects-title">
       <div class="section-header">
-        <h2>Featured Projects</h2>
+        <h2 id="projects-title">Featured Projects</h2>
         <p>Click explore to dive into each build</p>
       </div>
-      <div class="projects-grid" id="projects-grid">
-        <!-- Projects injected via JS for scalability -->
-      </div>
+      <div class="projects-grid" id="projects-grid" aria-live="polite"></div>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="footer-content">
       <div class="footer-brand">
         <span class="footer-logo">Suvam</span>
         <p>Crafting interfaces that feel alive.</p>
       </div>
-      <div class="footer-links">
+      <nav class="footer-links" aria-label="Footer navigation">
         <a href="index.html">Home</a>
         <a href="#projects">Projects</a>
-        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
-      </div>
-      <div class="footer-social">
-        <a href="https://instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-        <a href="https://twitter.com" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i></a>
-        <a href="https://github.com" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+      <div class="footer-social" aria-label="Social links">
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© <span id="year"></span> Suvam. Built with curiosity & code.</p>
+      <p>&copy; <span id="year"></span> Suvam. Built with curiosity &amp; code.</p>
     </div>
   </footer>
 

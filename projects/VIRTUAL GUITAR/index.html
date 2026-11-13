@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Acoustic Guitar</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section class="rotate-notice" role="status" aria-live="polite">
+      <div class="rotate-card">
+        <svg class="rotate-icon" viewBox="0 0 64 64" aria-hidden="true">
+          <rect x="22" y="8" width="20" height="38" rx="4"></rect>
+          <path d="M29 40h6M13 25a23 23 0 0 1 36-12M51 12l-2 8-8-2"></path>
+        </svg>
+        <h1>Turn your phone sideways</h1>
+        <p>Acoustic Guitar is best played in landscape. Rotate your phone and the guitar will be ready.</p>
+        <span class="rotate-hint">Waiting for landscape…</span>
+      </div>
+    </section>
+
+    <header>
+      <h1>ACOUSTIC GUITAR</h1>
+    </header>
+
+    <main>
+      <section class="stage">
+        <svg
+          id="guitar"
+          viewBox="0 0 2350 960"
+          role="img"
+          aria-label="Acoustic guitar. Drag across the strings to strum, tap a string on the neck to fret a note."
+        >
+          <image href="assets/guitar.jpg" width="2350" height="960"/>
+        </svg>
+      </section>
+
+      <section class="panel">
+        <div class="row actions">
+          <button id="down" class="main"><kbd>H</kbd><span>Strum down</span></button>
+          <button id="up" class="main"><kbd>J</kbd><span>Strum up</span></button>
+          <button id="open" class="ghost" aria-label="Clear chord"><kbd>Esc</kbd><span>Clear</span></button>
+        </div>
+
+        <div id="pad" class="pad"></div>
+
+        <div class="row mods">
+          <button data-mod="minor" aria-pressed="false"><kbd>Shift</kbd><span>minor</span></button>
+          <button data-mod="seventh" aria-pressed="false"><kbd>7</kbd><span>7th</span></button>
+          <button data-mod="sus4" aria-pressed="false"><kbd>8</kbd><span>sus4</span></button>
+        </div>
+
+      </section>
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
